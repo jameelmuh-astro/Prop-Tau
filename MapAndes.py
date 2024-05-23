@@ -35,7 +35,7 @@ ax = fig.add_subplot(111, projection='3d')
 surface = ax.plot_surface(lon_grid, lat_grid, elev_grid, cmap='terrain', edgecolor='none')
 
 # Ajout du contour de l'Observatoire Pierre Auger comme un hexagone rouge
-ax.plot(auger_lon, auger_lat, auger_elev, 'r-')
+ax.plot(auger_lon, auger_lat, auger_elev, 'r-', s=10, label='Pierre Auger')
 
 # Ajout d'une grille
 ax.grid(True)
