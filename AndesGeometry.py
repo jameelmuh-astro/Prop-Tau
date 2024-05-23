@@ -1,6 +1,5 @@
 import numpy as np
 
-# TEST ANDES
 class AndesGeometry:
     def __init__(self, filepath):
         """
