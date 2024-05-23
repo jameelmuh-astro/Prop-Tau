@@ -1,6 +1,6 @@
 import numpy as np
 
-class AndesGeometry:
+class Geometry:
     def __init__(self, filepath):
         """
         Initialise la classe AndesGeometry avec les données de topographie.
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     longitude = float(input("Entrez la longitude : "))
     
     # Initialisez un objet AndesGeometry en lui passant le chemin du fichier de données de topographie
-    geometry = AndesGeometry('DEM_Andes.txt')
+    geometry = Geometry('DEM_Andes.txt')
     
     # Appelez la méthode get_elevation avec des coordonnées de longitude et latitude pour obtenir l'élévation à cette position
     elevation = geometry.get_elevation(longitude, latitude)
